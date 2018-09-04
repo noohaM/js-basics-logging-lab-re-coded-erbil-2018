@@ -17,6 +17,9 @@ describe('index.js', function () {
     it('invokes console.log() with the string "this code was called"', function () {
       expect(spy.calledWithExactly('this code was called')).to.be.true;
     });
+    
+    console.log("this code was called");
+    console.log(driver);
 
     it('invokes console.log() with the `driver` variable', function () {
       expect(spy.calledWithExactly('bob')).to.be.true;
